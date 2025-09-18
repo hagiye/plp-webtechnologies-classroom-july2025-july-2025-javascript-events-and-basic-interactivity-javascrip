@@ -1,1 +1,137 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Pages with JavaScript</h1>
+        <p>Event Handling, Interactive Elements, and Form Validation</p>
+    </header>
+
+    <main class="container">
+        <!-- Part 1: Event Handling -->
+        <section class="section">
+            <h2>Part 1: Event Handling</h2>
+            
+            <div class="card">
+                <h3>Click Events</h3>
+                <p>Click the button to see a message:</p>
+                <button id="clickMeBtn">Click Me!</button>
+                <p id="clickMessage" class="result"></p>
+            </div>
+            
+            <div class="card">
+                <h3>Mouse Events</h3>
+                <p>Hover over and click the box below:</p>
+                <div id="interactiveBox" class="interactive-box">
+                    <p>Interact with me!</p>
+                </div>
+                <p id="mouseStatus" class="result">Status: Waiting for interaction</p>
+            </div>
+            
+            <div class="card">
+                <h3>Keyboard Events</h3>
+                <p>Type in the input field to see the output:</p>
+                <input type="text" id="keyboardInput" placeholder="Start typing...">
+                <p id="keyboardOutput" class="result">You typed: </p>
+            </div>
+        </section>
+
+        <!-- Part 2: Interactive Elements -->
+        <section class="section">
+            <h2>Part 2: Interactive Elements</h2>
+            
+            <div class="card">
+                <h3>Theme Switcher</h3>
+                <p>Change the theme of the page:</p>
+                <div class="button-group">
+                    <button id="lightThemeBtn">Light Theme</button>
+                    <button id="darkThemeBtn">Dark Theme</button>
+                    <button id="blueThemeBtn">Blue Theme</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Counter Game</h3>
+                <p>Click the buttons to change the count:</p>
+                <div class="counter-container">
+                    <button id="decrementBtn">-</button>
+                    <span id="countValue">0</span>
+                    <button id="incrementBtn">+</button>
+                </div>
+                <button id="resetCounterBtn">Reset Counter</button>
+            </div>
+            
+            <div class="card">
+                <h3>FAQ Section</h3>
+                <div class="faq-item">
+                    <div class="faq-question">What is JavaScript? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">JavaScript is a programming language that enables interactive web pages.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are events in JavaScript? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">Events are actions that occur in the browser, such as clicks, mouse movements, or keyboard input.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is DOM manipulation? <span class="faq-toggle">+</span></div>
+                    <div class="faq-answer">DOM manipulation is the process of dynamically modifying the content and structure of a web page.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Form Validation -->
+        <section class="section">
+            <h2>Part 3: Form Validation</h2>
+            
+            <div class="card">
+                <h3>Registration Form</h3>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Create a password">
+                        <span class="error-message" id="passwordError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                        <span class="error-message" id="confirmPasswordError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age">
+                        <span class="error-message" id="ageError"></span>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn">Register</button>
+                </form>
+                <div id="formResult" class="result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive Web Pages with JavaScript &copy; 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
